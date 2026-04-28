@@ -140,37 +140,37 @@ const products = [
       },
     ],
     composition: [
-      "1 mini bolo no pote com topper de Dia das Mães",
+      "1 mini bolo no acetato com topper de Dia das Mães",
       "6 brigadeiros decorados",
       "Caixa transparente com laço",
       "Sacola temática combinando com o kit",
     ],
   },
   {
-    name: "Kit bolo no pote e brigadeiros",
+    name: "Kit bolo no acetato e brigadeiros",
     price: "R$ 50,00",
     tag: "Presente delicado",
     description:
-      "Uma opção charmosa com bolo no pote, brigadeiros e sacola temática, ideal para presente compacto.",
+      "Uma opção charmosa com bolo no acetato, brigadeiros e sacola temática, ideal para presente compacto.",
     images: [
       {
         src: "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.22.jpeg",
-        alt: "Kit com bolo no pote, brigadeiros e sacola temática",
+        alt: "Kit com bolo no acetato, brigadeiros e sacola temática",
         label: "Kit montado",
       },
       {
         src: "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.23 (1).jpeg",
-        alt: "Itens separados do kit bolo no pote e brigadeiros",
+        alt: "Itens separados do kit bolo no acetato e brigadeiros",
         label: "Itens separados",
       },
       {
         src: "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.23 (2).jpeg",
-        alt: "Detalhe do bolo no pote do kit",
+        alt: "Detalhe do bolo no acetato do kit",
         label: "Detalhe do bolo",
       },
     ],
     composition: [
-      "1 bolo no pote com topper de Dia das Mães",
+      "1 bolo no acetato com topper de Dia das Mães",
       "1 caixinha com 4 brigadeiros decorados",
       "1 sacola temática com visor de coração",
     ],
@@ -201,7 +201,7 @@ const products = [
     composition: [
       "Base decorativa com nome Mãe",
       "Topo com balões vermelhos e dourados",
-      "Bolo no pote e doces artesanais",
+      "Bolo no acetato e doces artesanais",
       "Elemento com foto para personalização",
     ],
   },

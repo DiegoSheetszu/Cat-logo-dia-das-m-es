@@ -68,28 +68,28 @@ const storyProducts = [
   {
     name: "Kit mini bolo e brigadeiros",
     price: "R$ 60,00",
-    tagline: "Kit com mini bolo no pote e mix de doces na caixa transparente.",
+    tagline: "Kit com mini bolo no acetato e mix de doces na caixa transparente.",
     photos: [
       "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.28.jpeg",
       "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.28 (1).jpeg",
     ],
     composition: [
-      "1 mini bolo no pote",
+      "1 mini bolo no acetato",
       "Topper Feliz Dia das Mães",
       "6 doces no mix lateral",
       "Caixa transparente com laço",
     ],
   },
   {
-    name: "Kit bolo no pote e brigadeiros",
+    name: "Kit bolo no acetato e brigadeiros",
     price: "R$ 50,00",
-    tagline: "Bolo no pote com brigadeiros e sacola temática em um presente delicado.",
+    tagline: "Bolo no acetato com brigadeiros e sacola temática em um presente delicado.",
     photos: [
       "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.22.jpeg",
       "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.23 (1).jpeg",
     ],
     composition: [
-      "1 bolo no pote com topper",
+      "1 bolo no acetato com topper",
       "1 caixinha com 4 brigadeiros",
       "1 sacola temática com coração",
     ],
@@ -105,7 +105,7 @@ const storyProducts = [
     composition: [
       "Base em MDF escrita Te Mãe",
       "3 balões: 2 vermelhos e 1 dourado",
-      "1 mini bolo no pote com laço",
+      "1 mini bolo no acetato com laço",
       "5 doces aparentes e foto personalizada",
     ],
   },
