@@ -759,6 +759,22 @@ input:focus-visible {
   margin-top: 1.7rem;
 }
 
+.auth-form-links {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -0.45rem;
+}
+
+.auth-feedback {
+  margin: 0;
+  padding: 0.8rem;
+  border: 1px solid #c9dfcf;
+  border-radius: 11px;
+  background: #eff8f0;
+  color: #315c3d;
+  font-size: 0.84rem;
+}
+
 .login-form label {
   display: grid;
   gap: 0.4rem;

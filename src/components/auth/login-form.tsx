@@ -4,6 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { loginSchema, type LoginValues } from "@/lib/auth/schemas";
 import { createClient } from "@/lib/supabase/client";
 
@@ -56,6 +57,9 @@ export function LoginForm({ configured }: { configured: boolean }) {
         <input autoComplete="current-password" type="password" {...register("password")} />
         {errors.password && <small className="field-error">{errors.password.message}</small>}
       </label>
+      <div className="auth-form-links">
+        <Link className="text-link" href="/forgot-password">Esqueci minha senha</Link>
+      </div>
       {formError && <p className="form-error" role="alert">{formError}</p>}
       <button className="primary-button login-submit" disabled={isSubmitting} type="submit">
         {isSubmitting ? "Entrando..." : "Entrar no sistema"}
