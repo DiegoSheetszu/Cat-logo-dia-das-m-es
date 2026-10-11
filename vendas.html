@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doçuras da Lara | Painel de Vendas</title>
+    <meta
+      name="description"
+      content="Painel simples para cadastro de itens, registro de vendas e acompanhamento de lucro da Doçuras da Lara."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./vendas.css" />
+  </head>
+  <body>
+    <div class="sales-shell">
+      <header class="sales-hero">
+        <nav class="sales-topbar">
+          <a class="brand-lockup" href="./index.html">
+            <img
+              class="brand-logo"
+              src="./catalog_assets/logo-docuras-da-lara.jpeg"
+              alt="Logo Doçuras da Lara"
+            />
+            <div>
+              <p class="eyebrow">Gestão de vendas</p>
+              <p class="brand-name">Doçuras da Lara</p>
+            </div>
+          </a>
+
+          <div class="topbar-actions">
+            <button class="ghost-button" id="seedButton" type="button">Recarregar base</button>
+            <a class="ghost-link" href="./index.html">Ver catálogo</a>
+          </div>
+        </nav>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Painel simples e prático</p>
+            <h1>Controle seus itens, acompanhe vendas e entenda sua margem com clareza.</h1>
+            <p class="hero-text">
+              Cadastre produtos, registre pedidos, acompanhe o faturamento e veja
+              rapidamente quais kits giram mais, quanto cada venda rende e onde vale
+              ajustar preço ou custo.
+            </p>
+          </div>
+
+          <aside class="hero-panel">
+            <p class="panel-label">Visão rápida</p>
+            <ul class="hero-points">
+              <li>Cadastro de itens com preço, custo e margem</li>
+              <li>Lançamento de vendas com quantidade e canal</li>
+              <li>Indicadores automáticos de faturamento e lucro</li>
+              <li>Ranking de produtos mais vendidos</li>
+            </ul>
+          </aside>
+        </div>
+      </header>
+
+      <main class="dashboard">
+        <section class="stats-grid" id="statsGrid"></section>
+
+        <section class="workspace-grid">
+          <article class="panel-card form-card">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Cadastro</p>
+                <h2>Itens do catálogo</h2>
+              </div>
+              <p class="helper-text">Cadastre nome, tipo, preço, custo e estoque inicial.</p>
+            </div>
+
+            <form id="productForm" class="data-form">
+              <input type="hidden" id="productId" />
+
+              <label>
+                Nome do item
+                <input id="productName" name="productName" type="text" required />
+              </label>
+
+              <div class="form-row">
+                <label>
+                  Tipo
+                  <input id="productType" name="productType" type="text" placeholder="Kit, cesta, mimo..." required />
+                </label>
+
+                <label>
+                  Estoque inicial
+                  <input id="productStock" name="productStock" type="number" min="0" step="1" value="0" required />
+                </label>
+              </div>
+
+              <div class="form-row">
+                <label>
+                  Preço de venda
+                  <input id="productPrice" name="productPrice" type="number" min="0" step="0.01" required />
+                </label>
+
+                <label>
+                  Custo estimado
+                  <input id="productCost" name="productCost" type="number" min="0" step="0.01" required />
+                </label>
+              </div>
+
+              <label>
+                Observação
+                <textarea id="productNotes" name="productNotes" rows="3" placeholder="Ex.: item sazonal, muito procurado, precisa de reserva prévia..."></textarea>
+              </label>
+
+              <div class="form-summary" id="productMarginPreview">Margem estimada: 0%</div>
+
+              <div class="form-actions">
+                <button class="primary-button" type="submit">Salvar item</button>
+                <button class="secondary-button" type="button" id="clearProductForm">Limpar</button>
+              </div>
+            </form>
+          </article>
+
+          <article class="panel-card form-card">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Lançamento</p>
+                <h2>Registrar venda</h2>
+              </div>
+              <p class="helper-text">A venda já calcula faturamento, lucro e baixa do estoque.</p>
+            </div>
+
+            <form id="saleForm" class="data-form">
+              <label>
+                Produto
+                <select id="saleProduct" name="saleProduct" required></select>
+              </label>
+
+              <div class="form-row">
+                <label>
+                  Quantidade
+                  <input id="saleQuantity" name="saleQuantity" type="number" min="1" step="1" value="1" required />
+                </label>
+
+                <label>
+                  Data
+                  <input id="saleDate" name="saleDate" type="date" required />
+                </label>
+              </div>
+
+              <div class="form-row">
+                <label>
+                  Valor unitário
+                  <input id="saleUnitPrice" name="saleUnitPrice" type="number" min="0" step="0.01" required />
+                </label>
+
+                <label>
+                  Canal da venda
+                  <select id="saleChannel" name="saleChannel" required>
+                    <option value="WhatsApp">WhatsApp</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Indicação">Indicação</option>
+                    <option value="Presencial">Presencial</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="form-row">
+                <label>
+                  Cliente
+                  <input id="saleCustomer" name="saleCustomer" type="text" placeholder="Nome do cliente" />
+                </label>
+
+                <label>
+                  Desconto
+                  <input id="saleDiscount" name="saleDiscount" type="number" min="0" step="0.01" value="0" />
+                </label>
+              </div>
+
+              <div class="form-summary" id="salePreview">Total da venda: R$ 0,00</div>
+
+              <div class="form-actions">
+                <button class="primary-button" type="submit">Registrar venda</button>
+                <button class="secondary-button" type="button" id="clearSaleForm">Limpar</button>
+              </div>
+            </form>
+          </article>
+        </section>
+
+        <section class="insights-grid">
+          <article class="panel-card">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Análise</p>
+                <h2>Ranking e desempenho</h2>
+              </div>
+            </div>
+            <div id="topProducts" class="ranking-list"></div>
+          </article>
+
+          <article class="panel-card">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Atenção</p>
+                <h2>Leituras rápidas</h2>
+              </div>
+            </div>
+            <div id="businessAlerts" class="alert-stack"></div>
+          </article>
+        </section>
+
+        <section class="tables-grid">
+          <article class="panel-card">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Base ativa</p>
+                <h2>Itens cadastrados</h2>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Item</th>
+                    <th>Tipo</th>
+                    <th>Preço</th>
+                    <th>Custo</th>
+                    <th>Margem</th>
+                    <th>Estoque</th>
+                    <th>Ação</th>
+                  </tr>
+                </thead>
+                <tbody id="productsTableBody"></tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="panel-card">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Histórico</p>
+                <h2>Vendas lançadas</h2>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Data</th>
+                    <th>Produto</th>
+                    <th>Qtd</th>
+                    <th>Canal</th>
+                    <th>Total</th>
+                    <th>Lucro</th>
+                    <th>Ação</th>
+                  </tr>
+                </thead>
+                <tbody id="salesTableBody"></tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="./vendas.js"></script>
+  </body>
+</html>

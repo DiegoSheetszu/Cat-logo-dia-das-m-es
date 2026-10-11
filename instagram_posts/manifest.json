@@ -1,0 +1,54 @@
+{
+  "generatedAt": "2026-04-28T13:49:06.004Z",
+  "count": 8,
+  "products": [
+    {
+      "slug": "01-caixinha-com-amor",
+      "name": "Caixinha com amor",
+      "html": "html/01-caixinha-com-amor.html",
+      "png": "png/01-caixinha-com-amor.png"
+    },
+    {
+      "slug": "02-caixa-presente-doces-finos",
+      "name": "Caixa presente de doces finos",
+      "html": "html/02-caixa-presente-doces-finos.html",
+      "png": "png/02-caixa-presente-doces-finos.png"
+    },
+    {
+      "slug": "03-caixa-coracao-com-brigadeiros",
+      "name": "Caixa coração com brigadeiros",
+      "html": "html/03-caixa-coracao-com-brigadeiros.html",
+      "png": "png/03-caixa-coracao-com-brigadeiros.png"
+    },
+    {
+      "slug": "04-rosa-com-mensagem-mae",
+      "name": "Rosa com mensagem Mãe",
+      "html": "html/04-rosa-com-mensagem-mae.html",
+      "png": "png/04-rosa-com-mensagem-mae.png"
+    },
+    {
+      "slug": "05-kit-mini-bolo-e-brigadeiros",
+      "name": "Kit mini bolo e brigadeiros",
+      "html": "html/05-kit-mini-bolo-e-brigadeiros.html",
+      "png": "png/05-kit-mini-bolo-e-brigadeiros.png"
+    },
+    {
+      "slug": "06-kit-bolo-no-acetato-e-brigadeiros",
+      "name": "Kit bolo no acetato e brigadeiros",
+      "html": "html/06-kit-bolo-no-acetato-e-brigadeiros.html",
+      "png": "png/06-kit-bolo-no-acetato-e-brigadeiros.png"
+    },
+    {
+      "slug": "07-cesta-mae-com-baloes",
+      "name": "Cesta Mãe com balões",
+      "html": "html/07-cesta-mae-com-baloes.html",
+      "png": "png/07-cesta-mae-com-baloes.png"
+    },
+    {
+      "slug": "08-mini-bolo-com-rosa",
+      "name": "Mini bolo com rosa",
+      "html": "html/08-mini-bolo-com-rosa.html",
+      "png": "png/08-mini-bolo-com-rosa.png"
+    }
+  ]
+}

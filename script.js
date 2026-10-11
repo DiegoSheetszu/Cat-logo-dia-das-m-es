@@ -23,10 +23,9 @@ const products = [
       },
     ],
     composition: [
-      "Caixinha decorada em tom vinho",
-      "Coração recheado em destaque",
-      "Biscoitos amanteigados decorados",
+      "Caixinha decorada",
       "Sacola temática de apoio para entrega",
+      "4 biscoitos amanteigados personalizados",
     ],
   },
   {
@@ -53,9 +52,10 @@ const products = [
       },
     ],
     composition: [
-      "Caixa rígida decorada para presente",
-      "Sortimento de doces finos artesanais",
-      "Doces com acabamento temático de coração e mensagem",
+      "1 caixa retangular com dois andares",
+      "1 coração lapidado escrito MÃE",
+      "12 doces variados no corpo da caixa",
+      "1 sacola temática",
     ],
   },
   {
@@ -82,9 +82,9 @@ const products = [
       },
     ],
     composition: [
-      "Caixa em formato de coração",
-      "4 brigadeiros decorados",
-      "Tampa com aplique especial de Dia das Mães",
+      "1 caixa em formato de coração",
+      "4 brigadeiros ou bombons decorados",
+      "1 sacola temática",
     ],
   },
   {
@@ -121,7 +121,7 @@ const products = [
     price: "R$ 60,00",
     tag: "Pronto para entrega",
     description:
-      "Combinação com alto valor percebido, perfeita para campanhas com foto principal e pedido por impulso.",
+      "Uma combinação delicada, com apresentação pronta para presente e ótimo valor percebido.",
     images: [
       {
         src: "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.28.jpeg",
@@ -143,7 +143,7 @@ const products = [
       "1 mini bolo no acetato com topper de Dia das Mães",
       "6 brigadeiros decorados",
       "Caixa transparente com laço",
-      "Sacola temática combinando com o kit",
+      "1 sacola temática",
     ],
   },
   {
@@ -151,7 +151,7 @@ const products = [
     price: "R$ 50,00",
     tag: "Presente delicado",
     description:
-      "Uma opção charmosa com bolo no acetato, brigadeiros e sacola temática, ideal para presente compacto.",
+      "Uma opção compacta e charmosa, ideal para presentear com delicadeza.",
     images: [
       {
         src: "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.22.jpeg",
@@ -180,7 +180,7 @@ const products = [
     price: "R$ 80,00",
     tag: "Opção destaque",
     description:
-      "Kit cenográfico para ser o produto de maior impacto no catálogo, ideal para venda premium.",
+      "Uma proposta de maior impacto no catálogo, pensada para quem busca um presente marcante.",
     images: [
       {
         src: "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.25.jpeg",
@@ -199,10 +199,11 @@ const products = [
       },
     ],
     composition: [
-      "Base decorativa com nome Mãe",
-      "Topo com balões vermelhos e dourados",
-      "Bolo no acetato e doces artesanais",
-      "Elemento com foto para personalização",
+      "Base em MDF",
+      "Balões de decoração",
+      "Mini bolo no acetato com laço",
+      "6 doces artesanais",
+      "Foto personalizada",
     ],
   },
   {
@@ -210,7 +211,7 @@ const products = [
     price: "R$ 60,00",
     tag: "Afeto em destaque",
     description:
-      "Visual impactante para encomendas especiais, com presença de mesa e leitura imediata como presente.",
+      "Uma opção delicada e marcante, pensada para emocionar e valorizar a mesa do presente.",
     images: [
       {
         src: "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.29.jpeg",

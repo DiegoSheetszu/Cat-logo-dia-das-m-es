@@ -68,6 +68,14 @@ img {
   padding: 0.5rem 0;
 }
 
+.topbar-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.1rem;
+  flex-wrap: wrap;
+}
+
 .topbar-brand {
   display: flex;
   align-items: center;
@@ -541,6 +549,10 @@ img {
   .hero-copy,
   .topbar {
     padding-left: 0;
+  }
+
+  .topbar-links {
+    justify-content: flex-start;
   }
 
   .hero-copy h1 {

@@ -8,37 +8,36 @@ const storyProducts = [
   {
     name: "Caixinha com amor",
     price: "R$ 15,00",
-    tagline: "Mimo delicado com a sacolinha e os biscoitos em destaque.",
+    tagline: "Uma lembrança delicada, pensada para presentear com carinho.",
     photos: [
       "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.12.jpeg",
       "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.14 (2).jpeg",
     ],
     composition: [
-      "1 caixinha vinho decorada",
+      "1 caixinha decorada",
       "1 sacolinha temática",
-      "4 biscoitos amanteigados",
-      "Coração com recheio aparente",
+      "4 biscoitos amanteigados personalizados",
     ],
   },
   {
     name: "Caixa presente de doces finos",
     price: "R$ 60,00",
-    tagline: "Versão premium com variedade de doces e caixa rígida.",
+    tagline: "Uma opção mais sofisticada, com variedade de doces e apresentação especial.",
     photos: [
       "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.16.jpeg",
       "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.16 (2).jpeg",
     ],
     composition: [
-      "1 caixa retangular rígida",
-      "1 peça branca escrita MÃE",
-      "10 doces variados no corpo da caixa",
-      "1 sacola especial combinando",
+      "1 caixa retangular com dois andares",
+      "1 coração lapidado escrito MÃE",
+      "12 doces variados no corpo da caixa",
+      "1 sacola temática",
     ],
   },
   {
     name: "Caixa coração com brigadeiros",
     price: "R$ 20,00",
-    tagline: "Pequena, romântica e pronta para presentear.",
+    tagline: "Um mimo romântico e delicado para presentear de forma especial.",
     photos: [
       "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.17 (3).jpeg",
       "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.17 (2).jpeg",
@@ -46,14 +45,13 @@ const storyProducts = [
     composition: [
       "1 caixa em formato de coração",
       "4 brigadeiros ou bombons decorados",
-      "Detalhes vermelhos e dourados",
-      "Apresentação pronta para presente",
+      "1 sacola temática",
     ],
   },
   {
     name: "Rosa com mensagem Mãe",
     price: "R$ 25,00",
-    tagline: "Caixa longa com rosa natural e doces formando a palavra MÃE.",
+    tagline: "Uma lembrança criativa, delicada e cheia de significado.",
     photos: [
       "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.20.jpeg",
       "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.21 (1).jpeg",
@@ -68,7 +66,7 @@ const storyProducts = [
   {
     name: "Kit mini bolo e brigadeiros",
     price: "R$ 60,00",
-    tagline: "Kit com mini bolo no acetato e mix de doces na caixa transparente.",
+    tagline: "Uma combinação delicada com doces decorados e apresentação pronta para presentear.",
     photos: [
       "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.28.jpeg",
       "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.28 (1).jpeg",
@@ -78,12 +76,13 @@ const storyProducts = [
       "Topper Feliz Dia das Mães",
       "6 doces no mix lateral",
       "Caixa transparente com laço",
+      "1 sacola temática",
     ],
   },
   {
     name: "Kit bolo no acetato e brigadeiros",
     price: "R$ 50,00",
-    tagline: "Bolo no acetato com brigadeiros e sacola temática em um presente delicado.",
+    tagline: "Uma opção compacta e charmosa para surpreender com carinho.",
     photos: [
       "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.22.jpeg",
       "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.23 (1).jpeg",
@@ -91,28 +90,29 @@ const storyProducts = [
     composition: [
       "1 bolo no acetato com topper",
       "1 caixinha com 4 brigadeiros",
-      "1 sacola temática com coração",
+      "1 sacola temática com visor de coração",
     ],
   },
   {
     name: "Cesta Mãe com balões",
     price: "R$ 80,00",
-    tagline: "Peça premium com base decorada, balões e foto personalizada.",
+    tagline: "Uma proposta de maior impacto, com toque personalizado e presença marcante.",
     photos: [
       "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.24.jpeg",
       "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.25 (1).jpeg",
     ],
     composition: [
-      "Base em MDF escrita Te Mãe",
-      "3 balões: 2 vermelhos e 1 dourado",
+      "Base em MDF",
+      "Balões de decoração",
       "1 mini bolo no acetato com laço",
-      "5 doces aparentes e foto personalizada",
+      "6 doces artesanais",
+      "Foto personalizada",
     ],
   },
   {
     name: "Mini bolo com rosa",
     price: "R$ 60,00",
-    tagline: "Mini bolo redondo com rosa natural e doces ao redor da base.",
+    tagline: "Uma escolha delicada e marcante para emocionar já no primeiro olhar.",
     photos: [
       "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.29.jpeg",
       "./catalog_assets/WhatsApp Image 2026-04-27 at 13.57.29 (1).jpeg",
